@@ -6,8 +6,11 @@ import 'channel_list_page.dart';
 import 'main.dart';
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key, required StreamChatClient client, required Channel channel}) : super(key: key);
+  const MyApp({Key? key, required this.client, required this.channel})
+      : super(key: key);
 
+  final StreamChatClient client;
+  final Channel channel;
 
   @override
   Widget build(BuildContext context) {
